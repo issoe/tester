@@ -1,0 +1,17 @@
+.my-center-detailPage {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 100%; */
+    /* Optional: Set a specific height for the container */
+    /* background-color: blue; */
+    height: 500px;
+    /* max-width: 1000px; */
+}
+
+@media screen and (min-width: 500px) {
+    .my-center-detailPage {
+        /* background-color: yellow; */
+    }
+}

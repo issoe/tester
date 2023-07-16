@@ -1,78 +1,60 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 /*eslint-disable*/
-import React from "react";
+import React, { useState } from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Container, Input, Button } from "reactstrap";
+
+// Redirect to page
+import { Redirect } from 'react-router-dom';
+import OtherComponent from "components/OtherComponent";
+import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 // core components
+export default function IndexHeader() {
+  const [inputValue, setInputValue] = useState('');
+  const [value, setValue] = useState('');
 
-function IndexHeader() {
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const history = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Gửi giá trị inputValue đi tới nơi bạn muốn (ví dụ: API)
+    console.log('Giá trị đã gửi:', inputValue);
+    const product = { id: 1, name: 'Product 1' };
+    history.push('/detail', { product });
+  };
+
   return (
     <>
-      <div
-        className="page-header section-dark"
-        style={{
-          backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")",
-        }}
-      >
+      <div className="page-header section-dark" style={{ backgroundImage: "url(" + require("assets/img/antoine-barres.jpg") + ")", }}>
         <div className="filter" />
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">Paper Kit React</h1>
-              <div className="fog-low">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-              <div className="fog-low right">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
+              <h1 className="presentation-title">AIQuest</h1>
             </div>
-            <h2 className="presentation-subtitle text-center">
-              Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!
-            </h2>
+
+            <form onSubmit={handleSubmit}>
+              <Input
+                type="text"
+                placeholder="Nhập thông tin"
+                value={inputValue}
+                onChange={handleChange}
+              />
+
+              <Button type="submit">Press me pls</Button>
+            </form>
+
+            <h2 className="presentation-subtitle text-center">Languages: english, vietnameses, france, ...</h2>
           </Container>
         </div>
-        <div
-          className="moving-clouds"
-          style={{
-            backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
-          }}
-        />
-        <h6 className="category category-absolute">
-          Designed and coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=pkr-index-page"
-            target="_blank"
-          >
-            <img
-              alt="..."
-              className="creative-tim-logo"
-              src={require("assets/img/creative-tim-white-slim2.png")}
-            />
-          </a>
-        </h6>
+        <h6 className="category category-absolute"> Designed and coded by QuangKhanh</h6>
       </div>
     </>
   );
 }
-
-export default IndexHeader;

@@ -1,0 +1,26 @@
+.my-card-search {
+    /* background-color: #ccc;
+    border: 1px solid black;
+    max-width: 500px; */
+    display: block;
+    background-color: #ccc;
+    border: 1px solid black;
+    width: 800px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.my-card-search-logo {
+    background-color: red;
+}
+
+
+.my-card-search-content {
+    margin: 10px;
+}
+
+.my-card-search-header {
+    font-size: 16px;
+    font-weight: 550;
+    
+}
