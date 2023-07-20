@@ -25,10 +25,10 @@ root.render(
       <Route path="/index" element={<Index />} />
       <Route path="/detail" element = {<DetailPage/>}/>
       <Route path="/image" element={<ImagePage/>} />
-      {/* <Route path="/nucleo-icons" element={<NucleoIcons />} />
+      <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="/register-page" element={<RegisterPage />} /> */}
+      <Route path="/register-page" element={<RegisterPage />} />
       <Route path="*" element={<Navigate to="/index" replace />} />
     </Routes>
   </BrowserRouter>

@@ -1,7 +1,12 @@
-export default function ImagePage () {
+
+import MyNabBar from "components/Navbars/my-navbar";
+
+export default function ImagePage() {
     return (
         <>
-            this is image page
+            <MyNabBar />
+            
         </>
     );
 }
+
