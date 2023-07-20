@@ -13,6 +13,7 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
+import ImagePage from "pages/ImagePage";
 import DetailPage from "pages/DetailPage";
 
 // others
@@ -23,10 +24,11 @@ root.render(
     <Routes>
       <Route path="/index" element={<Index />} />
       <Route path="/detail" element = {<DetailPage/>}/>
-      <Route path="/nucleo-icons" element={<NucleoIcons />} />
+      <Route path="/image" element={<ImagePage/>} />
+      {/* <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="/register-page" element={<RegisterPage />} />
+      <Route path="/register-page" element={<RegisterPage />} /> */}
       <Route path="*" element={<Navigate to="/index" replace />} />
     </Routes>
   </BrowserRouter>
