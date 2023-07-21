@@ -1,7 +1,7 @@
-export default Element () {
+export default function Element () {
     return (
         <>
-        
+        hello
         </>
     );
 }

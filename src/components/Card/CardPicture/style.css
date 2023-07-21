@@ -1,0 +1,23 @@
+.my-card-content {
+    display: inline-block;
+    width: 100%;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 0;
+    padding: 0px;
+}
+
+.my-card-text-content {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ccc;
+}
+
+.my-footer-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-display-inline-block {
+    display: inline-block;
+}

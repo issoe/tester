@@ -13,7 +13,7 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
-import ImagePage from "pages/ImagePage";
+import ImagePage from "pages/ImagePage/ImagePage";
 import DetailPage from "pages/DetailPage";
 
 // others
