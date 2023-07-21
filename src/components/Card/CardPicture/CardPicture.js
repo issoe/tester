@@ -19,21 +19,30 @@ export default function CardPicture({ imageName, imageUrl }) {
 
     return (
         <div className='my-display-inline-block'>
+
             <Card sx={{ maxWidth: 345 }}>
                 <CardMedia
-                    style={{ height: 0, paddingTop: '56.25%' }}
+                    className='my-card-photo'
                     sx={{ height: 140 }}
                     // image={require(`../../../${imageUrl}`)}
-                    image={require('assets/img/search/paella.jpg')}
-                    title="green iguana"
+                    image={require('assets/img/search/contemplative-reptile.jpg')}
+                    title="Reptile"
                 />
-                <CardContent className='my-card-content'>
-                    <div className='my-card-text-content'>{imageName}</div>
-                </CardContent>
-                <CardActions className='my-footer-action'>
-                    <Button size="small" className='my-footer-action-btn'><ShareIcon className='thefuck' /></Button>
-                    <Button size="small" className='my-footer-action-btn'><FavoriteBorderIcon /></Button>
-                </CardActions>
+
+
+                <div className='my-text'>{imageName}</div>
+
+                {/* <CardActions className='my-footer-action'> */}
+                {/* <Button size="small" className='my-footer-action-btn'><ShareIcon className='thefuck' /></Button> */}
+                {/* <Button size="small" className='my-footer-action-btn'><FavoriteBorderIcon /></Button> */}
+                {/* <div className='test'>Hello</div> */}
+                {/* <Button size="small" className='my-footer-action-btn'>Hello</Button> */}
+                {/* </CardActions> */}
+
+                <div className='my-footer-action'>
+                    {/* <Button className='test-test-1'><ShareIcon className='thefuck' /></Button> */}
+                    <div className='test-test'>hello</div>
+                </div>
             </Card>
         </div>
     );

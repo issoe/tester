@@ -1,41 +1,83 @@
+.my-card-photo {
+    margin: 2px;
+}
+
 .my-card-content {
-    display: inline-block;
-    width: 100%;
-    background-color: #ccc;
+    /* background-color: #ccc; */
     text-align: center;
     line-height: 0;
     padding: 0px;
+    /* line-height: 20px; */
+    padding: 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .my-card-text-content {
     font-size: 16px;
     font-weight: 500;
-    background-color: #ccc;
+    background-color: blue;
 }
 
-.my-footer-action {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    min-width: 20px;
-
+.my-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1976d2;
+    text-align: center;
+    /* background-color: red; */
 }
 
 .my-display-inline-block {
     display: inline-block;
     margin: 10px;
+    /* cursor: pointer; */
+}
+
+.my-display-inline-block:hover {
+    /* opacity: 0.5; */
+}
+
+.my-footer-action {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    min-width: 20px;
+    /* background-color: yellow; */
+    /* height: 24px; */
+    line-height: 24px;
+}
+
+.test {
+    /* background-color: blue; */
+    margin: 0;
+    padding: 0;
 }
 
 .my-footer-action-btn {
     background-color: red !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    min-width: 50px;
-    width: 50px;    
 }
 
 .thefuck {
+
+    height: 16px !important;
+}
+
+.my-config {
+    position: relative;
+    
+}
+
+.test-test {
+    background-color: red;
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.test-test-1 {
     background-color: blue !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    height: 16px;
+    padding: 0;
+    margin: 0;
 }

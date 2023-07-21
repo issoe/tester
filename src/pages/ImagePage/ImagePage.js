@@ -159,64 +159,77 @@ export default function ImagePage() {
         </Menu>
     );
 
+    const recentlyList = [
+        {
+            name: "Paella",
+            url: "assets/img/search/paella.jpg"
+        },
+        {
+            name: "Reptitle",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        }, {
+            name: "Tabnine",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        }
+    ]
+
     const photoList = [
         {
             name: "Paella",
             url: "assets/img/search/paella.jpg"
-        }, 
-        // {
-        //     name: "Reptitle",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // }, {
-        //     name: "Tabnine",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // }, {
-        //     name: "Planet",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // }, {
-        //     name: "Paella",
-        //     url: "assets/img/search/paella.jpg"
-        // },
-        // {
-        //     name: "Reptitle",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // },
-        // {
-        //     name: "Tabnine",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // },
-        // {
-        //     name: "Planet",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // }, {
-        //     name: "Paella",
-        //     url: "assets/img/search/paella.jpg"
-        // },
-        // {
-        //     name: "Reptitle",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // },
-        // {
-        //     name: "Tabnine",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // },
-        // {
-        //     name: "Planet",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // }, {
-        //     name: "Paella",
-        //     url: "assets/img/search/paella.jpg"
-        // },
-        // {
-        //     name: "Reptitle",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // },
-        // {
-        //     name: "Tabnine",
-        //     url: "assets/img/search/contemplative-reptile.jpg"
-        // }
+        },
+        {
+            name: "Reptitle",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        }, {
+            name: "Tabnine",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        }, {
+            name: "Planet",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        }, {
+            name: "Paella",
+            url: "assets/img/search/paella.jpg"
+        },
+        {
+            name: "Reptitle",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        },
+        {
+            name: "Tabnine",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        },
+        {
+            name: "Planet",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        }, {
+            name: "Paella",
+            url: "assets/img/search/paella.jpg"
+        },
+        {
+            name: "Reptitle",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        },
+        {
+            name: "Tabnine",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        },
+        {
+            name: "Planet",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        }, {
+            name: "Paella",
+            url: "assets/img/search/paella.jpg"
+        },
+        {
+            name: "Reptitle",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        },
+        {
+            name: "Tabnine",
+            url: "assets/img/search/contemplative-reptile.jpg"
+        }
     ]
-    console.log("test:", require('assets/img/search/paella.jpg'))
 
     return (
         <>
@@ -240,6 +253,9 @@ export default function ImagePage() {
                         >
                             AIQuest
                         </Typography>
+
+
+
                         <Search>
                             <SearchIconWrapper>
                                 <SearchIcon />
@@ -249,6 +265,9 @@ export default function ImagePage() {
                                 inputProps={{ 'aria-label': 'search' }}
                             />
                         </Search>
+
+
+
                         <Box sx={{ flexGrow: 1 }} />
                         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -294,6 +313,17 @@ export default function ImagePage() {
                 {renderMobileMenu}
                 {renderMenu}
             </Box>
+
+            <div className='my-header'>Recently</div>
+            <div>
+                {
+                    recentlyList.map((photo) => (
+                        <CardPicture imageName={photo.name} imageUrl={photo.url} />
+                    ))
+                }
+            </div>
+
+            <div className='my-header'>The most suitable result</div>
             <div>
                 {
                     photoList.map((photo) => (
@@ -301,7 +331,7 @@ export default function ImagePage() {
                     ))
                 }
             </div>
-            {/* <DemoFooter /> */}
+            <DemoFooter />
         </>
     );
 }
