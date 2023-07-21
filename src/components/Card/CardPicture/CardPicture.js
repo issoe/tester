@@ -29,19 +29,11 @@ export default function CardPicture({ imageName, imageUrl }) {
                     title="Reptile"
                 />
 
+                <div className='my-title'>{imageName}</div>
 
-                <div className='my-text'>{imageName}</div>
-
-                {/* <CardActions className='my-footer-action'> */}
-                {/* <Button size="small" className='my-footer-action-btn'><ShareIcon className='thefuck' /></Button> */}
-                {/* <Button size="small" className='my-footer-action-btn'><FavoriteBorderIcon /></Button> */}
-                {/* <div className='test'>Hello</div> */}
-                {/* <Button size="small" className='my-footer-action-btn'>Hello</Button> */}
-                {/* </CardActions> */}
-
-                <div className='my-footer-action'>
-                    {/* <Button className='test-test-1'><ShareIcon className='thefuck' /></Button> */}
-                    <div className='test-test'>hello</div>
+                <div className='my-action'>
+                    <Button className='my-action-btn'><ShareIcon className='my-action-btn-doing' /></Button>
+                    <Button className='my-action-btn'><FavoriteBorderIcon className='my-action-btn-doing' /></Button>
                 </div>
             </Card>
         </div>

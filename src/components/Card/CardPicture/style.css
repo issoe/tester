@@ -36,14 +36,31 @@
     /* opacity: 0.5; */
 }
 
-.my-footer-action {
+.my-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1976d2;
+    text-align: center;
+}
+
+/* use */
+.my-action {
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black; */
-    min-width: 20px;
+    /* min-width: 20px; */
     /* background-color: yellow; */
-    /* height: 24px; */
-    line-height: 24px;
+    height: 20px;
+    align-items: center; /* important */
+}
+
+/* use */
+.my-action-btn {
+    height: 16px;
+}
+
+/* use */
+.my-action-btn-doing {
+    height: 16px !important;
 }
 
 .test {
@@ -56,10 +73,7 @@
     background-color: red !important;
 }
 
-.thefuck {
 
-    height: 16px !important;
-}
 
 .my-config {
     position: relative;
@@ -75,9 +89,6 @@
     height: 100%;
 }
 
-.test-test-1 {
-    background-color: blue !important;
+.my-action-btn {
     height: 16px;
-    padding: 0;
-    margin: 0;
 }
