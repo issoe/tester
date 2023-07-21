@@ -18,7 +18,7 @@ export default function CardPicture({ imageName, imageUrl }) {
     console.log(imageUrl)
 
     return (
-        <div >
+        <div className='my-display-inline-block'>
             <Card sx={{ maxWidth: 345 }}>
                 <CardMedia
                     style={{ height: 0, paddingTop: '56.25%' }}
@@ -31,8 +31,8 @@ export default function CardPicture({ imageName, imageUrl }) {
                     <div className='my-card-text-content'>{imageName}</div>
                 </CardContent>
                 <CardActions className='my-footer-action'>
-                    <Button size="small"><ShareIcon /></Button>
-                    <Button size="small"><FavoriteBorderIcon /></Button>
+                    <Button size="small" className='my-footer-action-btn'><ShareIcon className='thefuck' /></Button>
+                    <Button size="small" className='my-footer-action-btn'><FavoriteBorderIcon /></Button>
                 </CardActions>
             </Card>
         </div>

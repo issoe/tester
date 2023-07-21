@@ -19,7 +19,7 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import './style.css'
 
 import CardPicture from 'components/Card/CardPicture/CardPicture';
-
+import DemoFooter from 'components/Footers/DemoFooter';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -163,19 +163,58 @@ export default function ImagePage() {
         {
             name: "Paella",
             url: "assets/img/search/paella.jpg"
-        },
-        {
-            name: "Reptitle",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        },
-        {
-            name: "Tabnine",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        },
-        {
-            name: "Planet",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }
+        }, 
+        // {
+        //     name: "Reptitle",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // }, {
+        //     name: "Tabnine",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // }, {
+        //     name: "Planet",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // }, {
+        //     name: "Paella",
+        //     url: "assets/img/search/paella.jpg"
+        // },
+        // {
+        //     name: "Reptitle",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // },
+        // {
+        //     name: "Tabnine",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // },
+        // {
+        //     name: "Planet",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // }, {
+        //     name: "Paella",
+        //     url: "assets/img/search/paella.jpg"
+        // },
+        // {
+        //     name: "Reptitle",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // },
+        // {
+        //     name: "Tabnine",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // },
+        // {
+        //     name: "Planet",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // }, {
+        //     name: "Paella",
+        //     url: "assets/img/search/paella.jpg"
+        // },
+        // {
+        //     name: "Reptitle",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // },
+        // {
+        //     name: "Tabnine",
+        //     url: "assets/img/search/contemplative-reptile.jpg"
+        // }
     ]
     console.log("test:", require('assets/img/search/paella.jpg'))
 
@@ -262,7 +301,7 @@ export default function ImagePage() {
                     ))
                 }
             </div>
-
+            {/* <DemoFooter /> */}
         </>
     );
 }

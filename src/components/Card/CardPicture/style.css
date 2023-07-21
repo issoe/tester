@@ -16,8 +16,26 @@
 .my-footer-action {
     display: flex;
     justify-content: space-between;
+    border: 1px solid black;
+    min-width: 20px;
+
 }
 
 .my-display-inline-block {
     display: inline-block;
+    margin: 10px;
+}
+
+.my-footer-action-btn {
+    background-color: red !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-width: 50px;
+    width: 50px;    
+}
+
+.thefuck {
+    background-color: blue !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
