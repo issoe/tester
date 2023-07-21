@@ -36,11 +36,20 @@
     /* opacity: 0.5; */
 }
 
-.my-title {
+.my-image-name-outer {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.my-image-name {
     font-size: 16px;
     font-weight: 500;
     color: #1976d2;
-    text-align: center;
+    /* text-align: center; */
+    /* background-color: blue; */
+    display: inline-block;
 }
 
 /* use */

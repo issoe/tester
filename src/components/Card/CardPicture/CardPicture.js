@@ -29,12 +29,15 @@ export default function CardPicture({ imageName, imageUrl }) {
                     title="Reptile"
                 />
 
-                <div className='my-title'>{imageName}</div>
+                <div className='my-image-name-outer'>
+                    <div className='my-image-name'>{imageName}</div>
+                </div>
 
+                {/* 
                 <div className='my-action'>
                     <Button className='my-action-btn'><ShareIcon className='my-action-btn-doing' /></Button>
                     <Button className='my-action-btn'><FavoriteBorderIcon className='my-action-btn-doing' /></Button>
-                </div>
+                </div> */}
             </Card>
         </div>
     );

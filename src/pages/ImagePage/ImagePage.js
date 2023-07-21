@@ -322,8 +322,9 @@ export default function ImagePage() {
                     ))
                 }
             </div>
-
+                    
             <div className='my-header'>The most suitable result</div>
+            
             <div>
                 {
                     photoList.map((photo) => (
