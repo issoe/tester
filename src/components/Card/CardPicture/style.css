@@ -26,14 +26,17 @@
     /* background-color: red; */
 }
 
-.my-display-inline-block {
+/* use */
+.my-card-item {
     display: inline-block;
     margin: 10px;
     /* cursor: pointer; */
+    min-width: 100px;
 }
 
-.my-display-inline-block:hover {
-    /* opacity: 0.5; */
+/* use */
+.my-card-item:hover {
+    opacity: 0.8;
 }
 
 .my-image-name-outer {

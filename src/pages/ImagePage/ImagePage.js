@@ -21,6 +21,10 @@ import './style.css'
 import CardPicture from 'components/Card/CardPicture/CardPicture';
 import DemoFooter from 'components/Footers/DemoFooter';
 
+import recentlyImages from 'data/recentlyImages';
+import images from 'data/images';
+import suitableImages from 'data/suitableImages';
+
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -159,78 +163,6 @@ export default function ImagePage() {
         </Menu>
     );
 
-    const recentlyList = [
-        {
-            name: "Paella",
-            url: "assets/img/search/paella.jpg"
-        },
-        {
-            name: "Reptitle",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }, {
-            name: "Tabnine",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }
-    ]
-
-    const photoList = [
-        {
-            name: "Paella",
-            url: "assets/img/search/paella.jpg"
-        },
-        {
-            name: "Reptitle",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }, {
-            name: "Tabnine",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }, {
-            name: "Planet",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }, {
-            name: "Paella",
-            url: "assets/img/search/paella.jpg"
-        },
-        {
-            name: "Reptitle",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        },
-        {
-            name: "Tabnine",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        },
-        {
-            name: "Planet",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }, {
-            name: "Paella",
-            url: "assets/img/search/paella.jpg"
-        },
-        {
-            name: "Reptitle",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        },
-        {
-            name: "Tabnine",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        },
-        {
-            name: "Planet",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }, {
-            name: "Paella",
-            url: "assets/img/search/paella.jpg"
-        },
-        {
-            name: "Reptitle",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        },
-        {
-            name: "Tabnine",
-            url: "assets/img/search/contemplative-reptile.jpg"
-        }
-    ]
-
     return (
         <>
             <Box sx={{ flexGrow: 1 }}>
@@ -313,26 +245,33 @@ export default function ImagePage() {
                 {renderMobileMenu}
                 {renderMenu}
             </Box>
-
-            <div className='my-header'>Recently</div>
+            <div className='my-header'>The most suitable result</div>
             <div>
                 {
-                    recentlyList.map((photo) => (
-                        <CardPicture imageName={photo.name} imageUrl={photo.url} />
+                    suitableImages.map(photo => (
+                        <CardPicture imgName={photo.name} imgUrl={photo.url} />
                     ))
                 }
             </div>
                     
-            <div className='my-header'>The most suitable result</div>
-            
+            {/* <div className='my-header'>Recently</div>
             <div>
                 {
-                    photoList.map((photo) => (
+                    recentlyImages.map((photo) => (
                         <CardPicture imageName={photo.name} imageUrl={photo.url} />
                     ))
                 }
             </div>
-            <DemoFooter />
+
+            <div className='my-header'>Related images</div>
+            <div>
+                {
+                    images.map((photo) => (
+                        <CardPicture imageName={photo.name} imageUrl={photo.url} />
+                    ))
+                }
+            </div>
+            <DemoFooter /> */}
         </>
     );
 }

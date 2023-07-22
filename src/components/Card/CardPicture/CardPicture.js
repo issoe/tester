@@ -8,24 +8,28 @@ import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-// import '../../../assets/img/search/paella.jpg';
+// import '../../../assets/img/search/pic1.jpg';
 
 import './style.css';
 import { isMetaProperty } from 'typescript';
-// import myPicture from 'assert/img/avatar.jpg'
+// import myPicture from 'assert/img/avatar.jpg';
 
-export default function CardPicture({ imageName, imageUrl }) {
-    console.log(imageUrl)
-
+export default function CardPicture({ imgName, imgUrl }) {
+    
+    console.log()
     return (
-        <div className='my-display-inline-block'>
+        <div className='my-card-item'>
 
-            <Card sx={{ maxWidth: 345 }}>
+            hello
+            {/* <img src='../../../assets/img/search/pic1.jpg' alt='Hello'/> */}
+            <img src={require('assets/img/search/pic2.jpg')}/>
+
+            {/* <Card sx={{ maxWidth: 345 }}>
                 <CardMedia
                     className='my-card-photo'
                     sx={{ height: 140 }}
                     // image={require(`../../../${imageUrl}`)}
-                    image={require('assets/img/search/contemplative-reptile.jpg')}
+                    image={require('assets/img/search/pic1.jpg')}
                     title="Reptile"
                 />
 
@@ -33,12 +37,12 @@ export default function CardPicture({ imageName, imageUrl }) {
                     <div className='my-image-name'>{imageName}</div>
                 </div>
 
-                {/* 
+                                
                 <div className='my-action'>
                     <Button className='my-action-btn'><ShareIcon className='my-action-btn-doing' /></Button>
                     <Button className='my-action-btn'><FavoriteBorderIcon className='my-action-btn-doing' /></Button>
-                </div> */}
-            </Card>
+                </div>
+            </Card> */}
         </div>
     );
 }

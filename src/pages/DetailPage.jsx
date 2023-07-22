@@ -11,7 +11,6 @@ export default function DetailPage({input}) {
             {
                 myData.map(cardInfo => (
                     <CardSearch info={cardInfo} />
-
                 ))
             }
         </div>
